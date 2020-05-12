@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba VUE</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="consigna">
+            <h2>Esconda a la oveja</h2>
+        </div>
+<!--     
+        <div class="oveja">
+            <img src="/oveja-coloreada-sf.png" alt="">
+        </div>
+     -->
+    
+        <div id="boton">
+            <button class="button-primary" v-on:click="show = !show">
+              Esconder
+            </button>
+            <transition name="fade">
+                <div v-if="show" class="oveja">
+                    <img src="/oveja-coloreada-sf.png" alt="">
+                </div>
+            </transition>
+          </div>
+        <!-- <button class="button-primary">Esconder</button> -->
+
+    </div>
+    
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>

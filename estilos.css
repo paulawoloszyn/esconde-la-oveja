@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #8FF7A7 , #51BBFE);
+    /* background: #8FF7A7; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.consigna h2 {
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+}
+
+.oveja img {
+    margin-left: 370px;
+    width: 600px;
+    height: 400px;
+}
+
+.button-primary {
+    margin-left: 600px;
+    height: 50px;
+    width: 150px;
+    background: #4BA3C3;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0
+  }
